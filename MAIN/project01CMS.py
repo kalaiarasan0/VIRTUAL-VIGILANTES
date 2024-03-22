@@ -34,6 +34,8 @@ def validate_phone_number_edit(new_phone):
         return new_phone  # Allow empty phone number
     elif not new_phone.isdigit():
         raise ValueError("Mobile number can only contain digits!")
+    elif len(new_phone) != 10:  # Check for 10 digits
+        raise ValueError("Mobile number must be 10 digits long!")
     return new_phone.strip()
 
 
@@ -70,7 +72,7 @@ def create_contact():
         except ValueError as e:
             print(str(e))  
     id = generate_id()  
-    return {"id": id, "name": name, "phone": phone, "email": email}
+    return {"id": id, "name": name.lower(), "phone": phone, "email": email.lower()}
 
 def edit_contact(contacts, query):
     """Edits an existing contact based on name or ID."""
@@ -107,26 +109,28 @@ def edit_contact(contacts, query):
         except ValueError as e:
             print(str(e))
 
-        if new_phone:
-            match["id"] = new_phone
+        
         if new_name:
-            match["name"] = new_name
+            match["name"] = new_name.lower()
         if new_phone:
             match["phone"] = new_phone
         if new_email:
-            match["email"] = new_email
+            match["email"] = new_email.lower()
         print(f"Contact '{match['name']}' updated successfully!")
     else:
         print(f"Contact with name or ID '{query}' not found.")
 
-def delete_contact(contacts, name):
-    """Deletes a contact based on name."""
+def delete_contact(contacts, query):
+    """Deletes a contact based on name, ID, email, or phone number."""
+    found = False
     for i, contact in enumerate(contacts):
-        if contact["name"] == name:
-            del contacts[i]
-            print(f"Contact '{name}' deleted successfully!")
-            return
-    print(f"Contact '{name}' not found.")
+        if (query.lower() in contact["name"].lower() or query.lower() == str(contact["id"]).lower() or query.lower() == contact["email"].lower() or query.lower() == contact["phone"].lower()):
+            contacts.pop(i)
+            print(f"Contact '{contact['name']}' deleted successfully!")
+            found = True
+            break
+    if not found:
+        print(f"Contact '{query}' not found.")
 
 def view_contacts(contacts):
 
@@ -155,7 +159,7 @@ def search_contacts(contacts, query):
     matches = []
     query = query.strip().lower()
     for contact in contacts:
-        if query in contact["name"].lower() or query == str(contact["id"]):
+        if query in contact["name"].lower() or query == str(contact["id"]).lower() or query == contact["email"].lower() or query == contact["phone"].lower():
             matches.append(contact)
     if matches:
         print(f"Search results for '{query}':")
@@ -184,12 +188,12 @@ def main():
             query = input("Enter name or ID to edit for: ").strip()
             edit_contact(contacts, query)
         elif choice == '3':
-            name = input("Enter name of contact to delete: ").strip()
-            delete_contact(contacts, name)
+            query = input("Enter name or ID or Mobile number or Email to Delete: ").strip()
+            delete_contact(contacts, query)
         elif choice == '4':
             view_contacts(contacts)
         elif choice == '5':
-            query = input("Enter name or ID to search for: ").strip()
+            query = input("Enter name or ID or Mobile or Email to search for: ").strip()
             search_contacts(contacts.copy(), query)
         elif choice == '6':
             print("Exiting program...")
