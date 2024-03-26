@@ -1,0 +1,167 @@
+
+{
+    "Geography": [
+      {
+        "text": "What is the capital of France?",
+        "choices": ["London", "Paris", "Berlin", "Rome"],
+        "answer": "B"
+      },
+      {
+        "text": "What is the tallest mountain in the world?",
+        "choices": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+        "answer": "A"
+      },
+      {
+        "text": "Which river is the longest in the world?",
+        "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+        "answer": "B"
+      },
+      {
+        "text": "Which country is known as the 'Land of the Rising Sun'?",
+        "choices": ["China", "Japan", "India", "Australia"],
+        "answer": "B"
+      },
+      {
+        "text": "Which continent is the largest by land area?",
+        "choices": ["Africa", "Asia", "North America", "Europe"],
+        "answer": "B"
+      }
+    ],
+    
+    "Science": [
+          {
+            "text": "What is the chemical symbol for water?",
+            "choices": ["H2O", "CO2", "NaCl", "O2"],
+            "answer": "A"
+          },
+          {
+            "text": "What is the process by which plants make their food called?",
+            "choices": ["Photosynthesis", "Respiration", "Fermentation", "Transpiration"],
+            "answer": "A"
+          },
+          {
+            "text": "Which planet is known as the 'Red Planet'?",
+            "choices": ["Mars", "Venus", "Mercury", "Jupiter"],
+            "answer": "A"
+          },
+          {
+            "text": "What is the closest star to Earth?",
+            "choices": ["Sun", "Proxima Centauri", "Sirius", "Alpha Centauri"],
+            "answer": "A"
+          },
+          {
+            "text": "What is the chemical symbol for gold?",
+            "choices": ["Au", "Ag", "Fe", "Cu"],
+            "answer": "A"
+          }
+        ],
+
+     "History": [
+          {
+            "text": "Who was the first President of the United States?",
+            "choices": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+            "answer": "B"
+          },
+          {
+            "text": "In which year did World War II end?",
+            "choices": ["1945", "1939", "1918", "1941"],
+            "answer": "A"
+          },
+          {
+            "text": "Which ancient civilization built the Great Wall of China?",
+            "choices": ["Egyptians", "Greeks", "Romans", "Chinese"],
+            "answer": "D"
+          },
+          {
+            "text": "Who wrote 'The Communist Manifesto'?",
+            "choices": ["Karl Marx", "Adam Smith", "John Locke", "Friedrich Engels"],
+            "answer": "A"
+          },
+          {
+            "text": "What was the first industrialized country in the world?",
+            "choices": ["United Kingdom", "United States", "Germany", "France"],
+            "answer": "A"
+          }
+        ],
+
+    "Literature": [
+          {
+            "text": "Who wrote 'Romeo and Juliet'?",
+            "choices": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+            "answer": "A"
+          },
+          {
+            "text": "Which novel features the character Harry Potter?",
+            "choices": ["The Lord of the Rings", "The Hunger Games", "Harry Potter", "Pride and Prejudice"],
+            "answer": "C"
+          },
+          {
+            "text": "Who is the author of 'To Kill a Mockingbird'?",
+            "choices": ["Harper Lee", "J.K. Rowling", "George Orwell", "F. Scott Fitzgerald"],
+            "answer": "A"
+          },
+          {
+            "text": "Which epic poem features the Trojan War?",
+            "choices": ["The Odyssey", "Beowulf", "The Iliad", "Paradise Lost"],
+            "answer": "C"
+          },
+          {
+            "text": "Who wrote '1984'?",
+            "choices": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Philip K. Dick"],
+            "answer": "A"
+          }
+        ],      
+    
+    "Sports": [
+          {
+            "text": "Which sport uses a shuttlecock?",
+            "choices": [ "Tennis", "Squash","Badminton", "Table Tennis"],
+            "answer": "C"
+          },
+          {
+            "text": "In which sport is the World Series held?",
+            "choices": [ "Football", "Baseball", "Soccer", "Basketball"],
+            "answer": "B"
+          },
+          {
+            "text": "Who is the all-time leading scorer in NBA history?",
+            "choices": [ "LeBron James","Kareem Abdul-Jabbar", "Michael Jordan", "Kobe Bryant"],
+            "answer": "B"
+          },
+          {
+            "text": "Which country won the FIFA World Cup in 2018?",
+            "choices": ["France", "Brazil", "Germany", "Argentina"],
+            "answer": "A"
+          },
+          {
+            "text": "What is the maximum number of players allowed on the field in a soccer match?",
+            "choices": ["11", "10", "9", "12"],
+            "answer": "A"
+          }
+        ],
+      
+    
+    "Movies": [
+          {
+            "text": "Which movie won the Academy Award for Best Picture in 2020?",
+            "choices": [ "1917", "Joker","Parasite", "The Irishman"],
+            "answer": "C"
+          },
+          {
+            "text": "Who directed the movie 'Titanic'?",
+            "choices": ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Martin Scorsese"],
+            "answer": "A"
+          },
+          {
+            "text": "What is the highest-grossing film of all time?",
+            "choices": ["Avatar", "Titanic", "Star Wars: The Force Awakens","Avengers: Endgame"],
+            "answer": "B"
+          },
+          {
+            "text": "Which actor played the role of Iron Man in the Marvel Cinematic Universe?",
+            "choices": ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo"],
+            "answer": "A"
+          }
+        ]
+    }
+  
